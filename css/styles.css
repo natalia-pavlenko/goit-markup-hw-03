@@ -6,6 +6,8 @@
   --main-txt-cl--: #212121;
   --color-accent: #2196f3;
   --color-white: #ffffff;
+  --color-grey: #757575;
+
   /* bg colors */
   --dark-bg-cl--: #2f303a;
   /* other */
@@ -45,9 +47,6 @@ ul {
 }
 
 /* header */
-.header {
-  border-color: rgba(236, 236, 236, 1);
-}
 .header.border {
   border-bottom: 1px solid #ececec;
 }
@@ -99,7 +98,7 @@ ul {
   color: var(--color-accent);
 }
 .header-link {
-  color: #757575;
+  color: var(--color-grey);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -161,6 +160,7 @@ ul {
   width: 270px;
 }
 .skills-title {
+  margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -169,7 +169,7 @@ ul {
 .skills-text {
   font-size: 14px;
   line-height: 1.71;
-  color: #757575;
+  color: var(--color-grey);
   letter-spacing: 0.03em;
 }
 /* what we are doing */
@@ -189,14 +189,14 @@ ul {
   flex-wrap: wrap;
   gap: 30px;
 }
+img {
+  display: block;
+}
 .doing-card.item {
   --items: 3;
 }
 .doing.item {
   flex-basis: calc((100% - 30 * (var(--items) -1)) / var(--items));
-}
-.img {
-  display: block;
 }
 
 /* team */
@@ -216,13 +216,7 @@ ul {
 .team.list {
   display: flex;
   flex-wrap: wrap;
-}
-.team-card img {
-  width: 100%;
-}
-.team-card {
-  width: 25%;
-  padding: 0 15px;
+  gap: 30px;
 }
 
 .team-card-description {
@@ -235,14 +229,16 @@ ul {
   line-height: 1.19;
   margin-bottom: 10px;
 }
-
 .team-position {
   font-size: 16px;
   line-height: 1.19;
 }
 
 /* page portfolio */
-
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .filter.list {
   display: flex;
   justify-content: center;
@@ -292,7 +288,6 @@ ul {
   padding: 20px 20px;
   border: 1px solid #eeeeee;
   border-top: none;
-  text-align: justify;
 }
 .title-project {
   font-weight: 700;
@@ -322,11 +317,15 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   display: block;
+
   margin-bottom: 20px;
 }
 .address {
   color: rgba(255, 255, 255, 1);
   font-style: normal;
+}
+.list-footer {
+  margin-top: 9px;
 }
 
 .footer-link {
@@ -343,8 +342,7 @@ ul {
 }
 .link-mailto {
   display: block;
-  padding-top: 9px;
 }
 .link-tel {
-  padding-top: 9px;
+  margin-top: 9px;
 }
